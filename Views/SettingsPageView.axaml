@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LabLife.Views.SettingsPageView"
+             xmlns:vm="using:LabLife.ViewModels"
+             xmlns:views="using:LabLife.Views"
+	         x:DataType="vm:SettingsPageViewModel">
+
+	<UserControl.Resources>
+		<views:SliderValToFontSize x:Key="SliderValToFontSize"/>
+	</UserControl.Resources>
+
+	<StackPanel Spacing="20" Background="{Binding BgBackground}" VerticalAlignment="Center" HorizontalAlignment="Center">
+		
+		<Button Height="50" Width="200" Content="Hello" VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center"
+				Command="{Binding TriggerBG}" Margin="50" FontSize="{Binding SliderValue}"/>
+		
+		<Slider Background="blue" Maximum="30" Minimum="1" Value="{Binding SliderValue}"/>
+		
+	</StackPanel>
+</UserControl>

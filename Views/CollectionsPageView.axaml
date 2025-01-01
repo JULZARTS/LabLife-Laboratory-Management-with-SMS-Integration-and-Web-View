@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	         xmlns:vm="using:LabLife.ViewModels"
+	         xmlns:v="using:LabLife.Views"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+             x:Class="LabLife.Views.CollectionsPageView"
+			 x:DataType="vm:CollectionsPageViewModel">
+
+	<Design.DataContext>
+		<vm:CollectionsPageViewModel/>
+	</Design.DataContext>
+
+	
+	<Grid>
+		<Border CornerRadius="20" ClipToBounds="True" Height="430" Width="700">
+			<Image Source="/Assets/Images/crystalcave5.png" Stretch="Fill"/>
+		</Border>
+
+		<Button x:Name="btn" CornerRadius="15" Background="{Binding RecFill}" VerticalAlignment="Center"
+				HorizontalAlignment="Center" Height="100" Width="300"
+				 VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center" Foreground="DarkOrange"
+				FontSize="25" FontFamily="monocraft" FontWeight="SemiBold">
+
+			<Button.Content>
+				<StackPanel Orientation="Horizontal" Height="{Binding Path=$parent.Height}" Width="{Binding Path=$parent.Width}"
+							HorizontalAlignment="Center">
+					<Rectangle Width="40" Height="40" Fill="DarkOrange" HorizontalAlignment="Left"
+							   VerticalAlignment="Center" Margin="40 0 0 0"/>
+					<Label Content="{Binding BtnContent}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
+						   Margin="25 0 0 0"/>
+				</StackPanel>
+			</Button.Content>
+
+		</Button>
+		
+	</Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+             x:Class="LabLife.Views.GridPageView">
+
+	<StackPanel Orientation="Vertical">
+		<StackPanel Orientation="Vertical" Margin="0 0 0 0">
+			<Label Content="Welcome to Homepage!" FontFamily="monocraft" Margin="0 30 0 0"
+		   FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+			<Grid RowDefinitions="*, *" ColumnDefinitions="*, *" Height="250" Width="250"
+				  Margin="0 30 0 0">
+				<Rectangle Grid.Row="0" Grid.Column="0" Fill="#de57ba"  />
+				<Rectangle Grid.Row="0" Grid.Column="1" Fill="#ded357"  />
+				<Rectangle Grid.Row="1" Grid.Column="0" Fill="#57d3de"  />
+				<Rectangle Grid.Row="1" Grid.Column="1" Fill="#dccfe3"  />
+			</Grid>
+		</StackPanel>
+
+	</StackPanel>
+</UserControl>
