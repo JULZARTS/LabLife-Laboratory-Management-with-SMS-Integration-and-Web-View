@@ -2,7 +2,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:LabLife.ViewModels"
         xmlns:views="using:LabLife.Views.Converters"
-		xmlns:svg="clr-namespace:Avalonia.Controls.Svg;assembly=Avalonia.Svg.Skia"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" Width="1200" Height="750"
@@ -29,6 +28,9 @@
 			<Setter Property="Foreground" Value="White"/>
 		</Style>
 
+		<Style Selector="Button#ToggleSidebarButton:pressed" >
+			<Setter Property="Background" Value="White"/>
+		</Style>
 	</Window.Styles>
 
 
@@ -61,6 +63,7 @@
 							<Button Height="40" Width="{Binding PaneWidth}"
 									Background="Transparent" 
 					                Command="{Binding ToggleSidebar}"
+									Name="ToggleSidebarButton"
 									>
 
 								<TextBlock  Text="{Binding TbText}" Padding="0 0 15 0"
@@ -85,7 +88,7 @@
 								<DataTemplate>
 									<StackPanel Spacing="17.2" Orientation="Horizontal" Height="50"  
 											>
-										<svg:svg  Source="{ Binding Icon }" VerticalAlignment="Center" HorizontalAlignment="Center"
+										<PathIcon Data="{ Binding Icon }" VerticalAlignment="Center" HorizontalAlignment="Center"
 												  Foreground="{Binding ElementName=TbTitle, Path=Foreground}"
 												  />
 									

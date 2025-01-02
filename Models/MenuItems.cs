@@ -12,7 +12,7 @@ namespace LabLife.Models
     {
         public string? Title { get; set; }
         public string? key { get; set; }
-        public Geometry? Icon { get; set; }
+        public string? Icon { get; set; }
         public ICommand command { get; set; }
     }
 }

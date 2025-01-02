@@ -13,17 +13,35 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AvaloniaXaml Remove="Assets\Icons.axaml" />
+    <AvaloniaResource Remove="Assets\Icons\Delete.svg" />
+    <AvaloniaResource Remove="Assets\Icons\EmojiAngry.svg" />
+    <AvaloniaResource Remove="Assets\Icons\EmojiLaugh.svg" />
+    <AvaloniaResource Remove="Assets\Icons\Globe.svg" />
+    <AvaloniaResource Remove="Assets\Icons\Home.svg" />
+    <AvaloniaResource Remove="Assets\Icons\IosArrowRight.svg" />
+    <AvaloniaResource Remove="Assets\Icons\Mail.svg" />
+    <AvaloniaResource Remove="Assets\Icons\PersonAdd.svg" />
+    <AvaloniaResource Remove="Assets\Icons\Settings.svg" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Icons\Delete.svg" />
+    <None Remove="Assets\Icons\EmojiAngry.svg" />
+    <None Remove="Assets\Icons\EmojiLaugh.svg" />
+    <None Remove="Assets\Icons\Globe.svg" />
+    <None Remove="Assets\Icons\Home.svg" />
+    <None Remove="Assets\Icons\IosArrowRight.svg" />
+    <None Remove="Assets\Icons\Mail.svg" />
+    <None Remove="Assets\Icons\PersonAdd.svg" />
+    <None Remove="Assets\Icons\Settings.svg" />
     <None Remove="Assets\Images\crystalcave5.png" />
     <None Remove="Assets\Righteous-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="11.0.10" />
+    <PackageReference Include="Avalonia" Version="11.2.0" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Svg.Skia" Version="11.2.0.2" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.10" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
@@ -32,9 +50,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AvaloniaResource Update="Assets\Icons.axaml">
-      <SubType>Designer</SubType>
-    </AvaloniaResource>
+    <Resource Include="Assets\Icons\Delete.svg" />
+    <Resource Include="Assets\Icons\EmojiAngry.svg" />
+    <Resource Include="Assets\Icons\EmojiLaugh.svg" />
+    <Resource Include="Assets\Icons\Globe.svg" />
+    <Resource Include="Assets\Icons\Home.svg" />
+    <Resource Include="Assets\Icons\IosArrowRight.svg" />
+    <Resource Include="Assets\Icons\Mail.svg" />
+    <Resource Include="Assets\Icons\PersonAdd.svg" />
+    <Resource Include="Assets\Icons\Settings.svg" />
   </ItemGroup>
 
   <ItemGroup>
