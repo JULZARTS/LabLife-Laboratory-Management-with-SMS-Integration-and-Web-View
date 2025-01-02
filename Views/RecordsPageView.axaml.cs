@@ -5,12 +5,12 @@ using Avalonia.Markup.Xaml;
 
 namespace LabLife.Views;
 
-public partial class GridPageView : UserControl
+public partial class RecordsPageView : UserControl
 {
-    public GridPageView()
+    public RecordsPageView()
     {
         InitializeComponent();
-        GridPageViewModel gpvm = new GridPageViewModel();
+        RecordsPageViewModel gpvm = new RecordsPageViewModel();
         DataContext = gpvm;
     }
 }

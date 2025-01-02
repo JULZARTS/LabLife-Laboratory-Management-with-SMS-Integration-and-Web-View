@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabLife.ViewModels
 {
-    public class HomePageViewModel: ViewModelBase
+    internal class CommunicationsPageViewModel: ViewModelBase
     {
-        public HomePageViewModel()
-        {
-            
-        }
     }
 }

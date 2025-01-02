@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace LabLife.ViewModels
 {
-    public partial class GridPageViewModel: ViewModelBase
+    public partial class RecordsPageViewModel: ViewModelBase
     {
       
     }

@@ -13,7 +13,7 @@ namespace LabLife.ViewModels
         [ObservableProperty]
         private bool isPaneOpen = true;
         [ObservableProperty]
-        private ViewModelBase _currentPage = new HomePageViewModel();
+        private ViewModelBase _currentPage = new DashboardPageViewModel();
 
         [ObservableProperty]
         private ObservableCollection <MenuItems> menuItems;
@@ -27,22 +27,35 @@ namespace LabLife.ViewModels
             IsPaneOpen = !IsPaneOpen;
         }
 
+
         [RelayCommand]
-        public void GoHome()
+        public void GoWebInspect()
         {
-            CurrentPage = new HomePageViewModel();
+            CurrentPage = new WebInspectPageViewModel();
         }
 
         [RelayCommand]
-        public void GoCollections()
+        public void GoCommunications()
         {
-            CurrentPage = new CollectionsPageViewModel();
+            CurrentPage = new CommunicationsPageViewModel();
         }
 
         [RelayCommand]
-        public void GoGrids()
+        public void GoDashboard()
         {
-            CurrentPage = new GridPageViewModel();
+            CurrentPage = new DashboardPageViewModel();
+        }
+
+        [RelayCommand]
+        public void GoNewPatient()
+        {
+            CurrentPage = new NewPatientPageViewModel();
+        }
+
+        [RelayCommand]
+        public void GoRecords()
+        {
+            CurrentPage = new RecordsPageViewModel();
         }
 
         [RelayCommand]
@@ -54,9 +67,11 @@ namespace LabLife.ViewModels
         partial void OnSelectedItemChanged(MenuItems? value)
         {
             if (value.Title == "Settings") { CurrentPage = new SettingsPageViewModel(); }
-            else if (value.Title == "Collections") { CurrentPage = new CollectionsPageViewModel(); }
-            else if (value.Title == "Grids") { CurrentPage = new GridPageViewModel(); }
-            else if (value.Title == "Home") { CurrentPage = new HomePageViewModel(); };
+            else if (value.Title == "New Patient") { CurrentPage = new NewPatientPageViewModel(); }
+            else if (value.Title == "Records") { CurrentPage = new RecordsPageViewModel(); }
+            else if (value.Title == "Web Inspect") { CurrentPage = new WebInspectPageViewModel(); }
+            else if (value.Title == "Communications") { CurrentPage = new CommunicationsPageViewModel(); }
+            else if (value.Title == "Dashboard") { CurrentPage = new DashboardPageViewModel(); };
         }
 
 
@@ -71,9 +86,11 @@ namespace LabLife.ViewModels
          
             menuItems = new ObservableCollection<MenuItems>()
             {
-                new MenuItems { Title = "Home", Icon = Geometry.Parse(geo1), command = new RelayCommand(GoHome)},
-                new MenuItems { Title = "Collections", Icon = Geometry.Parse(geo2), command = new RelayCommand(GoCollections)},
-                new MenuItems { Title = "Grids", Icon = Geometry.Parse(geo2), command = new RelayCommand(GoGrids)},
+                new MenuItems { Title = "Dashboard", Icon = Geometry.Parse(geo1), command = new RelayCommand(GoDashboard)},
+                new MenuItems { Title = "New Patient", Icon = Geometry.Parse(geo2), command = new RelayCommand(GoNewPatient)},
+                new MenuItems { Title = "Records", Icon = Geometry.Parse(geo2), command = new RelayCommand(GoRecords)},
+                new MenuItems { Title = "Communications", Icon = Geometry.Parse(geo2), command = new RelayCommand(GoCommunications)},
+                new MenuItems { Title = "Web Inspect", Icon = Geometry.Parse(geo2), command = new RelayCommand(GoWebInspect)},
                 new MenuItems { Title = "Settings", Icon = Geometry.Parse(geo3), command = new RelayCommand(GoSettings)}
             };
         }

@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace LabLife.ViewModels
 {
-    public partial class CollectionsPageViewModel: ViewModelBase
+    public partial class NewPatientPageViewModel: ViewModelBase
     {
         
         [ObservableProperty]

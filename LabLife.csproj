@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <None Remove="Assets\Images\crystalcave5.png" />
+    <None Remove="Assets\Righteous-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,10 +38,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Views\CollectionsPageView.axaml" />
+    <Folder Include="Views\Converters\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Converters\" />
+    <Compile Update="Views\RecordsPageView.axaml.cs">
+      <DependentUpon>RecordsPageView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NewPatientPageView.axaml.cs">
+      <DependentUpon>NewPatientPageView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DashboardPageView.axaml.cs">
+      <DependentUpon>DashboardPageView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\WebInspectPageView.axaml.cs">
+      <DependentUpon>WebInspectPageView.axaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace LabLife.Views;
 
-public partial class CollectionsPageView : UserControl
+public partial class NewPatientPageView : UserControl
 {
-    public CollectionsPageView()
+    public NewPatientPageView()
     {
         InitializeComponent();
     }

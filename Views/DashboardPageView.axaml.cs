@@ -4,9 +4,9 @@ using Avalonia.Controls;
 
 namespace LabLife.Views;
 
-public partial class HomePageView : UserControl
+public partial class DashboardPageView : UserControl
 {
-    public HomePageView()
+    public DashboardPageView()
     {
         InitializeComponent();
     }

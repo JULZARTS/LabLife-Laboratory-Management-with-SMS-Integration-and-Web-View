@@ -49,8 +49,7 @@
 								<PathIcon Data="{StaticResource optionsregular}" />
 							</Button>
 							
-							<TextBlock Text="Main Navigation" VerticalAlignment="Center" 
-									   FontFamily="poppins" FontWeight="SemiBold"/>
+							<TextBlock Text="Main Navigation" VerticalAlignment="Center" FontWeight="SemiBold"/>
 
 
 						</StackPanel>
@@ -68,7 +67,7 @@
 										<PathIcon Data="{ Binding Icon }" VerticalAlignment="Center" HorizontalAlignment="Center"
 												  />
 										<TextBlock Text="{Binding Title}" VerticalAlignment="Center" HorizontalAlignment="Center"
-												   FontSize="12" FontFamily="poppins" FontWeight="SemiBold"
+												   FontSize="12" FontFamily="poppins"
 												   />
 									</StackPanel>
 
