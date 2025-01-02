@@ -38,10 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Converters\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Views\RecordsPageView.axaml.cs">
       <DependentUpon>RecordsPageView.axaml</DependentUpon>
     </Compile>

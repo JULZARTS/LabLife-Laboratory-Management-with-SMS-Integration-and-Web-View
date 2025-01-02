@@ -5,7 +5,6 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.ObjectModel;
-using Avalonia.Input;
 
 namespace LabLife.ViewModels
 {
@@ -33,7 +32,7 @@ namespace LabLife.ViewModels
         {
             IsPaneOpen = !IsPaneOpen;
             if(PaneWidth == 190) { PaneWidth = 55; } else { PaneWidth = 190; }
-            if(TbText == "Main Navigation") { TbText = "➜"; } else { TbText = "Main Navigation"; }
+            if(TbText == "Main Navigation") { TbText = "◯"; } else { TbText = "Main Navigation"; }
         }
 
 
