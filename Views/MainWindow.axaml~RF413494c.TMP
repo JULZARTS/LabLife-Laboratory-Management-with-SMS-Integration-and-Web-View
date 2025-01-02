@@ -17,14 +17,14 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
+	<Styles>
+		<ListBox.Styles>
+			<Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+				<Setter Property="Background" Value="Transparent"/>
+			</Style>
+		</ListBox.Styles>
 
-	<Window.Styles>
-		<Style Selector="ListBoxItem:selected /template/ ContentPresenter">
-			<Setter Property="Background" Value="Black"/>
-			<Setter Property="Foreground" Value="White"/>
-		</Style>
-	</Window.Styles>
-
+	</Styles>
 
 
 
@@ -73,7 +73,8 @@
 								<DataTemplate>
 									<StackPanel Spacing="15" Orientation="Horizontal" Height="50"  
 											>
-									
+										<PathIcon Data="{ Binding Icon }" VerticalAlignment="Center" HorizontalAlignment="Center"
+												  />
 										<TextBlock Text="{Binding Title}" VerticalAlignment="Center" HorizontalAlignment="Center"
 												   FontSize="12" FontFamily="poppins" FontWeight="SemiBold"
 												   />

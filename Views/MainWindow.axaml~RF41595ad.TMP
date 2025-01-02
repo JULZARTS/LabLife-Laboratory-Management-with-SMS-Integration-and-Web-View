@@ -73,7 +73,8 @@
 								<DataTemplate>
 									<StackPanel Spacing="15" Orientation="Horizontal" Height="50"  
 											>
-									
+										<PathIcon Data="{ Binding Icon }" VerticalAlignment="Center" HorizontalAlignment="Center"
+												  />
 										<TextBlock Text="{Binding Title}" VerticalAlignment="Center" HorizontalAlignment="Center"
 												   FontSize="12" FontFamily="poppins" FontWeight="SemiBold"
 												   />
