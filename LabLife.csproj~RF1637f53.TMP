@@ -13,21 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Icons\BookContacts.svg" />
-    <None Remove="Assets\Icons\Delete.svg" />
-    <None Remove="Assets\Icons\EmojiAngry.svg" />
-    <None Remove="Assets\Icons\EmojiLaugh.svg" />
-    <None Remove="Assets\Icons\Globe.svg" />
-    <None Remove="Assets\Icons\Home.svg" />
-    <None Remove="Assets\Icons\IosArrowRight.svg" />
-    <None Remove="Assets\Icons\Mail.svg" />
-    <None Remove="Assets\Icons\PersonAdd.svg" />
-    <None Remove="Assets\Icons\Settings.svg" />
-    <None Remove="Assets\Images\crystalcave5.png" />
-    <None Remove="Assets\Righteous-Regular.ttf" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.2.3" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
     <PackageReference Include="Avalonia.Svg.Skia" Version="11.2.0.2" />

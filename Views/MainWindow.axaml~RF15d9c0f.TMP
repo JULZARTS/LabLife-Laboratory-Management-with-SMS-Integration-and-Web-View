@@ -2,6 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:LabLife.ViewModels"
         xmlns:views="using:LabLife.Views.Converters"
+		xmlns:svg="clr-namespace:Avalonia.Controls.Svg;assembly=Avalonia.Svg.Skia"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" Width="1200" Height="750"
@@ -82,21 +83,16 @@
 
 
 								<DataTemplate>
-									<StackPanel Spacing="17.2" Orientation="Horizontal" Height="50">
+									<StackPanel Spacing="17.2" Orientation="Horizontal" Height="50"  
+											>
 
-										<Svg Path="{Binding Icon}" Height="30" Width="30" 
-											 
-											 Css=".icon { fill: {Binding Element}; }" 
-											 
-											 
-											 />
-											 
-					
-								
-										
+										<Image Source="{Binding Icon}" Height="30" Width="30" />
+
+
+
 										<TextBlock Text="{Binding Title}" VerticalAlignment="Center" HorizontalAlignment="Center"
-												   FontSize="12" FontFamily="poppins" FontWeight="SemiBold" x:Name="TbTitle"/>
-									
+												   FontSize="12" FontFamily="poppins" FontWeight="SemiBold" x:Name="TbTitle"
+												   />
 									</StackPanel>
 
 								</DataTemplate>

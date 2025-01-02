@@ -11,17 +11,7 @@
 
 	<Application.Styles>
 		<FluentTheme />
-		<StyleInclude Source="avares://LabLife/Assets/Icons.axaml"/>
 	</Application.Styles>
-
-	<Application.Resources>
-		<ResourceDictionary>
-			<x:String x:Key="MailIconSource">avares://LabLife/Assets/Icons/Globe.svg</x:String>
-		</ResourceDictionary>
-	</Application.Resources>
-
-
-
 
 
 </Application>

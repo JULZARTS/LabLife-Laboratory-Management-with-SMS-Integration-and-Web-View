@@ -90,12 +90,12 @@ namespace LabLife.ViewModels
          
             menuItems = new ObservableCollection<MenuItems>()
             {
-                new MenuItems { Title = "Dashboard",Icon = "/Assets/Icons/Home.svg",  command = new RelayCommand(GoDashboard)},
-                new MenuItems { Title = "New Patient", Icon = "/Assets/Icons/PersonAdd.svg",  command = new RelayCommand(GoNewPatient)},
-                new MenuItems { Title = "Records", Icon = "/Assets/Icons/BookContacts.svg", command = new RelayCommand(GoRecords)},
-                new MenuItems { Title = "Communications", Icon = "/Assets/Icons/Mail.svg",  command = new RelayCommand(GoCommunications)},
-                new MenuItems { Title = "Web Inspect", Icon = "/Assets/Icons/Globe.svg" , command = new RelayCommand(GoWebInspect)},
-                new MenuItems { Title = "Settings", Icon = "/Assets/Icons/Settings.svg", command = new RelayCommand(GoSettings)}
+                new MenuItems { Title = "Dashboard",  command = new RelayCommand(GoDashboard)},
+                new MenuItems { Title = "New Patient",  command = new RelayCommand(GoNewPatient)},
+                new MenuItems { Title = "Records", command = new RelayCommand(GoRecords)},
+                new MenuItems { Title = "Communications", command = new RelayCommand(GoCommunications)},
+                new MenuItems { Title = "Web Inspect", Icon = "/Assets/Icons/Home.svg" , command = new RelayCommand(GoWebInspect)},
+                new MenuItems { Title = "Settings", command = new RelayCommand(GoSettings)}
             };
         }
     }
