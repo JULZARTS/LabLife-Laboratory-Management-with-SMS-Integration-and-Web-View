@@ -17,6 +17,9 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
+	
+
+
 	<Window.Resources>
 		<views:PaneLengthConverter x:Key="PaneLengthConverter"/>
 	</Window.Resources>
@@ -84,12 +87,11 @@
 								<DataTemplate>
 									<StackPanel Spacing="17.2" Orientation="Horizontal" Height="50">
 
-										<Svg Path="{Binding Icon}" Height="30" Width="30" 
-											 
-											 Css=".icon { fill: {Binding Element}; }" 
-											 
-											 
-											 />
+										
+										
+										
+										<Svg Path="{Binding Icon}" Height="30" Width="30" x:Name="SvgIcon"
+												 Css=".icon { Fill: Blue }" />
 											 
 					
 								

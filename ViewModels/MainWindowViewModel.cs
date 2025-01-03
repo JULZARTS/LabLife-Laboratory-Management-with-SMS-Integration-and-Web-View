@@ -6,6 +6,7 @@ using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.ObjectModel;
 using LabLife.Views;
+using Avalonia.Svg.Skia;
 
 namespace LabLife.ViewModels
 {
@@ -28,7 +29,11 @@ namespace LabLife.ViewModels
         [ObservableProperty]
         private MenuItems? selectedItem;
 
-        [RelayCommand]
+        [ObservableProperty]
+        private Brush recFill;
+
+
+    [RelayCommand]
         public void ToggleSidebar()
         {
             IsPaneOpen = !IsPaneOpen;
@@ -83,13 +88,17 @@ namespace LabLife.ViewModels
             else if (value.Title == "Dashboard") { CurrentPage = new DashboardPageViewModel(); };
         }
 
-
+        
 
         public MainWindowViewModel()
         {
-         
+
+            RecFill = new SolidColorBrush(Color.FromRgb(0, 255, 0));
+
+
             menuItems = new ObservableCollection<MenuItems>()
             {
+      
                 new MenuItems { Title = "Dashboard",Icon = "/Assets/Icons/Home.svg",  command = new RelayCommand(GoDashboard)},
                 new MenuItems { Title = "New Patient", Icon = "/Assets/Icons/PersonAdd.svg",  command = new RelayCommand(GoNewPatient)},
                 new MenuItems { Title = "Records", Icon = "/Assets/Icons/BookContacts.svg", command = new RelayCommand(GoRecords)},
