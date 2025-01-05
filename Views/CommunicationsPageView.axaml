@@ -2,7 +2,74 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="LabLife.Views.CommunicationsPageView">
-  Welcome to Communications!
+             xmlns:vm="using:LabLife.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="650"
+             x:Class="LabLife.Views.CommunicationsPageView"
+             x:DataType="vm:CommunicationsPageViewModel" 
+            >
+    
+    <Design.DataContext>
+        <vm:CommunicationsPageViewModel />
+    </Design.DataContext>
+
+
+
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    
+   <StackPanel Orientation="Vertical" Grid.Row="0" VerticalAlignment="Center"
+               HorizontalAlignment="Center" Margin="0 30 0 0">
+       <TextBlock Text="Enter patient contact # directly"
+                  FontSize="15" FontWeight="SemiBold" Margin="0 0 0  20"
+                  VerticalAlignment="Center" HorizontalAlignment="Center"
+       />
+    
+       <TextBox Text="+639216000339" FontSize="24" FontWeight="SemiBold"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                Height="50" Width="400" BorderThickness="2"
+                Margin="0 0 0  5"
+       />
+    
+       <TextBlock Text="Patient Name: Julius Ignacio"
+                  FontSize="15" FontWeight="SemiBold"
+                  VerticalAlignment="Center" HorizontalAlignment="Center"
+               
+       />
+   </StackPanel>
+    
+    <StackPanel Orientation="Vertical" Grid.Row="1" VerticalAlignment="Center"
+                HorizontalAlignment="Center" Margin="0 30 0 0">
+        
+        <TextBlock Text="Enter the link of the result or write a message "
+                   FontSize="15" FontWeight="SemiBold" Margin="0 0 0  20"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+        />
+    
+        <TextBox 
+            
+            Text="{Binding DefaultContent}" x:Name="Tb"
+                 FontSize="13" FontWeight="Regular" Padding="0 5 0 0"
+                 TextWrapping="Wrap" GotFocus="Tb_OnGotFocus"
+                 VerticalContentAlignment="Top" HorizontalContentAlignment="Center"
+                 VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Height="200" Width="600" BorderThickness="2"
+                 Margin="0 0 0  5"
+        />
+
+    </StackPanel>
+    
+    
+    
+    <Button Grid.Row="2" Height="50" Width="200" FontSize="15" Margin="0 0 0 30"
+            VerticalAlignment="Center" HorizontalAlignment="Center"
+            Background="LimeGreen" Foreground="White" Content="Send"
+            FontWeight="SemiBold" BorderBrush="Black" BorderThickness="2"
+            HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+            />
+</Grid>
 </UserControl>

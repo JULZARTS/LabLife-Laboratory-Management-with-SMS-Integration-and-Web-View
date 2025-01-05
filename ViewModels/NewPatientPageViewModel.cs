@@ -10,7 +10,7 @@ namespace LabLife.ViewModels
         private string recFill = "lightyellow";
 
         [ObservableProperty]
-        private string? btnContent = "Hello World";
+        private string? btnContent = "Hello Worlddddddd";
 
     }
 }

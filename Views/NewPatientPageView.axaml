@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	         xmlns:vm="using:LabLife.ViewModels"
 	         xmlns:v="using:LabLife.Views"
-             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="990" d:DesignHeight="850"
              x:Class="LabLife.Views.NewPatientPageView"
 			 x:DataType="vm:NewPatientPageViewModel">
 
@@ -13,28 +13,65 @@
 	</Design.DataContext>
 
 	
-	<Grid>
-		<Border CornerRadius="20" ClipToBounds="True" Height="430" Width="700">
-			<Image Source="/Assets/Images/crystalcave5.png" Stretch="Fill"/>
-		</Border>
 
-		<Button x:Name="btn" CornerRadius="15" Background="{Binding RecFill}" VerticalAlignment="Center"
-				HorizontalAlignment="Center" Height="100" Width="300"
-				 VerticalContentAlignment="Center"
-				HorizontalContentAlignment="Center" Foreground="DarkOrange"
-				FontSize="25" FontFamily="monocraft" FontWeight="SemiBold">
 
-			<Button.Content>
-				<StackPanel Orientation="Horizontal" Height="{Binding Path=$parent.Height}" Width="{Binding Path=$parent.Width}"
-							HorizontalAlignment="Center">
-					<Rectangle Width="40" Height="40" Fill="DarkOrange" HorizontalAlignment="Left"
-							   VerticalAlignment="Center" Margin="40 0 0 0"/>
-					<Label Content="{Binding BtnContent}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
-						   Margin="25 0 0 0"/>
-				</StackPanel>
-			</Button.Content>
+		<Border BorderBrush="Black" BorderThickness="1.5" Height="630" Width="900">
+			<StackPanel Background="DarkGray" Orientation="Horizontal" HorizontalAlignment="Center"
+			>
+				<Grid 
+					Background="GhostWhite" Height="600" Width="450"
+				>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+					
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					
+					<TextBlock Grid.Row="0" Grid.Column="0" Width="130"
+					           Text="First Name" TextAlignment="Left" 
+					/>
+					
+					<TextBlock Grid.Row="0" Grid.Column="1" Width="130"
+					           Text="Last Name" TextAlignment="Left"
+					/>
+					
+					<TextBlock Grid.Row="0" Grid.Column="2" Width="130"
+					           Text="Middle Name" TextAlignment="Left"
+					/>
+					<TextBox Grid.Row="1" Grid.Column="0" Height="10" Width="130" />
+					<TextBox Grid.Row="1" Grid.Column="1" Height="10" Width="130" />
+					<TextBox Grid.Row="1" Grid.Column="2" Height="10" Width="130" />
+					
+					<TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" 
+					           Text="Date of Birth" HorizontalAlignment="Center"
+					           Margin="0 10 0 0"
+					/>
+					<DatePicker Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"
+					            Name="DOBDatePicker" Width="300" 
+					            VerticalAlignment="Center" HorizontalAlignment="Center"
+					/>
 
-		</Button>
+					
+				</Grid>
 		
-	</Grid>
+				<Border BorderBrush="Black" BorderThickness="1.5">
+					<Grid
+						Background="WhiteSmoke" Height="600" Width="450"
+						RowDefinitions="*,*" ColumnDefinitions="150,150,150"
+					>
+					</Grid>
+				</Border>
+			</StackPanel>
+		</Border>
+		 
+
 </UserControl>
+
+

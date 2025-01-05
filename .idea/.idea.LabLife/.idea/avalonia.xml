@@ -3,7 +3,9 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Views/CommunicationsPageView.axaml" value="LabLife.csproj" />
         <entry key="Views/MainWindow.axaml" value="LabLife.csproj" />
+        <entry key="Views/NewPatientPageView.axaml" value="LabLife.csproj" />
       </map>
     </option>
   </component>

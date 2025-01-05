@@ -1,12 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Avalonia.Input;
+using Avalonia.Interactivity;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using LabLife.Views;
 
 namespace LabLife.ViewModels
 {
-    internal class CommunicationsPageViewModel: ViewModelBase
+    public partial class CommunicationsPageViewModel : ViewModelBase
     {
+        [ObservableProperty]
+        private string? defaultContent = "Please make sure the entered content is correct before sending";
+        
+        
+        public CommunicationsPageViewModel()
+        {
+            
+        }
     }
 }
