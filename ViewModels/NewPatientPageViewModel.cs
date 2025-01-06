@@ -1,5 +1,7 @@
-﻿using Avalonia.Media.Imaging;
+﻿using System;
+using Avalonia.Media.Imaging;
 using CommunityToolkit.Mvvm.ComponentModel;
+using LabLife.Views;
 
 namespace LabLife.ViewModels
 {
@@ -11,6 +13,10 @@ namespace LabLife.ViewModels
 
         [ObservableProperty]
         private string? btnContent = "Hello Worlddddddd";
+
+        public NewPatientPageViewModel()
+        {
+        }
 
     }
 }
