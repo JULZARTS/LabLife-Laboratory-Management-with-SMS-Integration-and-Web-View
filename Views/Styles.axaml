@@ -1,0 +1,65 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+    
+    <Style Selector="TextBox">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="FontSize" Value="11"></Setter>
+        <Setter Property="CornerRadius" Value="0"/>
+    </Style>
+
+   <Style Selector="TextBlock">
+       <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+       <Setter Property="Margin" Value="3 0 0 0"></Setter>
+   </Style>
+    
+    <!-- <Style Selector="RadioButton"> -->
+    <!--     <Setter Property="Template"> -->
+    <!--         <ControlTemplate TargetType="RadioButton"> -->
+    <!--             <Grid> -->
+    <!--                 <Grid.ColumnDefinitions> -->
+    <!--                     ~1~ Adjust the size of the radio button circle @1@ -->
+    <!--                     ~1~ Smaller circle size @1@ -->
+    <!--                     <ColumnDefinition Width="16" />  -->
+    <!--                     <ColumnDefinition Width="*" /> -->
+    <!--                 </Grid.ColumnDefinitions> -->
+    <!-- -->
+    <!--                 ~1~ Outer circle (unchecked state) @1@ -->
+    <!--                 <Ellipse -->
+    <!--                     Width="14" -->
+    <!--                     Height="14" -->
+    <!--                     Stroke="DimGray" -->
+    <!--                     StrokeThickness="1" -->
+    <!--                     VerticalAlignment="Center" -->
+    <!--                     HorizontalAlignment="Center" /> -->
+    <!-- -->
+    <!--                 ~1~ Inner circle (checked state) @1@ -->
+    <!--                 <Ellipse -->
+    <!--                     Width="10" -->
+    <!--                     Height="10" -->
+    <!--                     VerticalAlignment="Center" HorizontalAlignment="Center" -->
+    <!--                     Fill="DodgerBlue" -->
+    <!--                     IsVisible="{TemplateBinding IsChecked}" /> -->
+    <!-- -->
+    <!--                 ~1~ Content (text) @1@ -->
+    <!--                 <ContentPresenter -->
+    <!--                     Grid.Column="1" -->
+    <!--                     VerticalAlignment="Center" -->
+    <!--                     Margin="4,0,0,0" -->
+    <!--                     Content="{TemplateBinding Content}" -->
+    <!--                     ContentTemplate="{TemplateBinding ContentTemplate}" -->
+    <!--                     Foreground="{TemplateBinding Foreground}" /> -->
+    <!--             </Grid> -->
+    <!--         </ControlTemplate> -->
+    <!--     </Setter> -->
+    <!-- -->
+    <!--     ~1~ Optional: Adjust the padding for better alignment @1@ -->
+    <!-- </Style> -->
+    <!-- -->
+
+</Styles>

@@ -11,7 +11,7 @@
 
 	<Application.Styles>
 		<FluentTheme />
+		<StyleInclude Source="avares://LabLife/Views/Styles.axaml" />
 	</Application.Styles>
-
 
 </Application>
