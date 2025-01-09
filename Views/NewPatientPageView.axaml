@@ -10,14 +10,11 @@
 	<Design.DataContext>
 		<vm:NewPatientPageViewModel/>
 	</Design.DataContext>
-
 	
-
-
-			<StackPanel Background="DarkGray" Orientation="Horizontal" HorizontalAlignment="Center"
+			<StackPanel Background="White" Orientation="Vertical" HorizontalAlignment="Center"
 			>
 				<Grid 
-					Background="GhostWhite" Height="600" Width="450"
+					Background="GhostWhite" Height="160" Width="450"
 				>
 					<Grid.RowDefinitions>
 						<RowDefinition Height="Auto"/>
@@ -100,9 +97,10 @@
 				
 				
 				<Grid 
-					Background="Beige" Height="600" Width="450">
+					Background="White" Height="300" Width="450">
 					
 					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
 						<RowDefinition Height="Auto"/>
 						<RowDefinition Height="Auto"/>
 						<RowDefinition Height="Auto"/>
@@ -115,6 +113,10 @@
 						<ColumnDefinition/>
 					</Grid.ColumnDefinitions>
 					
+					<Button Name="ConfirmBtn" Grid.Row="5" Grid.Column="1" Content="Confirm" Width="120" Height="40"
+					        VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+					        Foreground="White" Margin="0 280 0 0"/>
+					
 					<StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left">
 						<TextBlock  Width="120" FontSize="11" FontWeight="SemiBold"
 						           Text="Allergies" TextAlignment="Left"/>
@@ -124,8 +126,9 @@
 					</StackPanel>
 					
 					<StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left">
-						<TextBlock  Width="120" FontSize="11" FontWeight="SemiBold"
-						            Text="Medical History" TextAlignment="Left"/>
+						<TextBlock  Width="150" FontSize="11" FontWeight="SemiBold"
+						            Text="Medical History  (optional)" TextAlignment="Left"/>
+						
 						
 						<TextBox FontSize="12" MinHeight="1" Height="96"
 						         Width="450" HorizontalContentAlignment="Left" TextWrapping="Wrap" />
@@ -159,6 +162,9 @@
 
 					
 				</Grid>
+				
+				
+				
 			</StackPanel>
 		 
 
