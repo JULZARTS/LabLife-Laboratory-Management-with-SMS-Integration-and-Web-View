@@ -4,5 +4,8 @@ namespace LabLife.ViewModels
 {
     public class ViewModelBase : ObservableObject
     {
+        
+        
+        
     }
 }

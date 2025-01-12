@@ -9,6 +9,7 @@
         <entry key="Views/NewPatientPageView.axaml" value="LabLife.csproj" />
         <entry key="Views/Resources.axaml" value="LabLife.csproj" />
         <entry key="Views/Styles.axaml" value="LabLife.csproj" />
+        <entry key="Views/WebInspectPageView.axaml" value="LabLife.csproj" />
       </map>
     </option>
   </component>

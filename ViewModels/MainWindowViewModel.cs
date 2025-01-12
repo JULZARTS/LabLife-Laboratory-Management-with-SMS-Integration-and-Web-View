@@ -1,12 +1,9 @@
 ﻿using LabLife.Models;
-using Avalonia.Controls;
 using Avalonia.Media;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
 using System.Collections.ObjectModel;
-using LabLife.Views;
-using Avalonia.Svg.Skia;
+
 
 namespace LabLife.ViewModels
 {
